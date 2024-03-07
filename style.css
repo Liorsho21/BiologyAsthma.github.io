@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+    @keyframes blink {
+        0% {opacity: 1;}
+        50% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f0f0f0;
+        direction: rtl;
+        line-height: 1.6;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1rem;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        transition: background-color 0.3s;
+    }
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+    #intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #name-input {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        box-sizing: border-box;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .ai-selection {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+    .ai-button {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        background-color: #007AFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s;
+        margin-left: 1vw;
+    }
+    .ai-button:hover {
+        background-color: #0056b3;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .ai-button:active {
+        transform: translateY(1px);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    }
+    #chat {
+        border: 1px solid #ccc;
+        height: 400px;
+        overflow-y: scroll;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+    }
+    .message {
+        max-width: 60%;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .ai-message {
+    font-weight: bold;
+    background-color: #007AFF;
+    color: white;
+    }
+    #question-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .question-button {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      background-color: #f0f0f0f0;
+      color: #333;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s;
+    }
+    .question-button:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .question-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    }
+    .thinking {
+    font-style: italic;
+    animation: blink 1s linear infinite;
+    }
+    .toggle-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: #007AFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    }
+    .toggle-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .toggle-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    }
